@@ -30,7 +30,7 @@ For encoding and building a video ROM, you will need a Make, a C compiler (Clang
 You can encode and build a ROM simply by running `make`:
 
 ```
-make SOURCE=/path/to/my_video.mp4
+make SOURCE=/path/to/my_video.y4m
 ```
 
 `SOURCE` may be any file compatible with your copy of FFMPEG. Your output will be at `output/my_video/my_video.gbc`.
@@ -38,7 +38,7 @@ make SOURCE=/path/to/my_video.mp4
 Optionally, you may specify `QUALITY` to reduce the file size or, alternatively, improve video quality:
 
 ```
-make SOURCE=/path/to/my_video.mp4 QUALITY=8
+make SOURCE=/path/to/my_video.y4m QUALITY=8
 ```
 
 `QUALITY` can be any non-negative integer. The higher the value, the more aggressive the compression. A value of 0 performs no lossy compression after converting a frame to the player's format. The default value is 4.
