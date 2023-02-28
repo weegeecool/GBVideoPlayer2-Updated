@@ -25,6 +25,7 @@ For encoding and building a video ROM, you will need a Make, a C compiler (Clang
 * In-frame compression of successive similar rows of pixels, customizable compression quality
 * Can repeat a frame up to 255 times to avoid re-encoding highly similar frames
 * Must be ".mp4" coded but named ".y4m"
+* Reccomended maximum length of 1 minute at 30fps, 2 minutes at 15fps, 3 minutes at 10fps, or 4 minutes at 5fps
 
 ## Building a ROM
 
