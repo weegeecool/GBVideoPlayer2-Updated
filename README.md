@@ -24,6 +24,7 @@ For encoding and building a video ROM, you will need a Make, a C compiler (Clang
 * A frame rate of 29.86 frames per second
 * In-frame compression of successive similar rows of pixels, customizable compression quality
 * Can repeat a frame up to 255 times to avoid re-encoding highly similar frames
+* Must be ".mp4" coded but named ".y4m"
 
 ## Building a ROM
 
