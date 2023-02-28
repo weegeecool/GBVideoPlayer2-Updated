@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
+#include <stdbool.h> 
+#include <string.h> 
 #include <stdint.h>
+#include <string.h>
 
 #define SCREEN_SIZE (160 * 144)
 #define PIXELS (SCREEN_SIZE * 2)
@@ -451,7 +452,7 @@ int main(int argc, const char * argv[])
         FILE *in = fopen(filepath, "rb");
         fseek(in, 18, SEEK_SET); // Skip header
         /* Deinterleave the image (easier to process) while computing diff */
-        fread(rgb, sizeof(rgb), 1, in);
+        fread(rgb, sizeof(rgb), 1, in); 
         for (unsigned i = 0; i < SCREEN_SIZE; i++) {
             diff += abs(b[i] - rgb[i * 3]);
             diff += abs(g[i] - rgb[i * 3 + 1]);
